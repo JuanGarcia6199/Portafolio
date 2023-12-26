@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;600;800;900&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Juan Portafolio</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="scroll" href="#"><img class="logo" src="" alt="Logo of Juan the front-end developer" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link scroll is-off-hover" href="#about">About</a></li>
+          <li><a class="main-nav-link scroll is-off-hover" href="#skills">Skills</a></li>
+          <li><a class="main-nav-link scroll is-off-hover" href="#">Hobbies</a></li>
+          <li><a class="main-nav-link scroll is-off-hover" href="#projects">Proyects</a></li>
+          <li><a class="main-nav-link nav-cta scroll is-off-hover contactBtn" href="none">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="intro">
+              <span class="box"></span>
+                <span class="hi">Hi, I,m</span>
+              <span class="text"></span>
+              <span class="cursor">_</span>
+              <!-- Juan Francisco Garcia, a<br />Front-End Developer -->
+            </h1>
+          </div>
+          <div class="hero-img-box">
+            <lottie-player
+              class="hero-img"
+              src="https://assets5.lottiefiles.com/packages/lf20_vnikrcia.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+              alt="Person coding"
+            ></lottie-player>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-about container grid grid--2--cols" id="about">
+      <lottie-player
+        class="about-img"
+        src="https://assets8.lottiefiles.com/packages/lf20_fifomona.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      >
+      </lottie-player>
+      <div class="about-blocks">
+        <div class="title-about">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="background-description">
+        <div class="about-description">
+          Hi, I'm Juan Francisco Garcia and I'm a self-taught Front-End
+          developer hungry for knowledge, I love all things related to
+          technology and the great things we can do with it. 
+          <br>
+          <br>
+           What I like the most is creating interfaces with a modern and
+          beautiful design capable of capturing the user's attention so that
+          they have a good and unforgettable experience.
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section-skills container grip grip--2--rows" id="skills">
+
+      <div class="title-skills">
+      <h2>Skills</h2>
+      </div>
+
+      <div class="skills-block grid grid--4--cols grip--2--rows">
+
+        <div class="card-container is-off-hover">
+
+          <div class="card">
+
+            <div class="card-face card-face--front">
+
+              <img class="skill-img" src="img/html-1.svg" alt="HTML logo">
+             <br>
+             <br>
+             <h3 class="skill-name">HTML</h3>
+
+            </div>
+
+            <div class="card-face card-face--back">
+              <ul id="card-content">
+                <li>Intermediate Level</li>
+                <li>HTML5</li>
+              </ul>
+              <img class="skill-img back-skill-img" src="img/html-1.svg" alt="HTML logo">
+            </div>
+
+           </div>
+
+        </div>
+
+        <div class="card-container is-off-hover">
+            
+          <div class="card">
+              
+             <div class="card-face card-face--front">
+
+               <img class="skill-img" src="img/css-3.svg" alt="CSS logo">
+               <br>
+               <br>
+               <h3 class="skill-name">CSS</h3>
+
+            </div>
+
+            <div class="card-face card-face--back">
+
+              <ul id="card-content">
+                <li>Intermediate Level</li>
+                <li>CSS3</li>
+                <li>CSS GRIP</li>
+                <li>FLEXBOX</li>
+              </ul>
+              <img class="skill-img back-skill-img" src="img/css-3.svg" alt="CSS logo">
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card-container is-off-hover">
+            
+           <div class="card">
+              
+            <div class="card-face card-face--front">
+
+              <img class="skill-img" src="img/logo-javascript.svg" alt="Javascript logo">
+              <br>
+              <br>
+              <h3 class="skill-name">Javascript</h3>
+
+            </div>
+
+             <div class="card-face card-face--back">
+
+              <ul id="card-content">
+                <li>Intermediate Level</li>
+                <li></li>
+              </ul>
+              <img class="skill-img back-skill-img" src="img/logo-javascript.svg" alt="Javascript logo">
+            </div>
+
+           </div>
+
+        </div>
+
+        <div class="card-container is-off-hover">
+  
+          <div class="card">
+            
+            <div class="card-face card-face--front">
+              
+              <img class="skill-img" src="img/adobe-photoshop-2.svg" alt="Photoshop logo">
+              <br>
+              <br>
+              <h3 class="skill-name">Photoshop</h3>
+              
+            </div>
+
+            <div class="card-face card-face--back">
+
+               <ul id="card-content">
+                <li>Advance Level</li>
+               </ul>
+              <img class="skill-img back-skill-img" src="img/adobe-photoshop-2.svg" alt="Photoshop logo">
+            </div>
+
+          </div>
+
+         </div>
+
+         <div class="card-container is-off-hover">
+            
+          <div class="card">
+             
+           <div class="card-face card-face--front">
+
+             <img class="skill-img" src="img/gsap-greensock.svg" alt="Javascript logo">
+             <br>
+             <br>
+             <h3 class="skill-name">GSAP</h3>
+
+           </div>
+
+            <div class="card-face card-face--back">
+
+             <ul id="card-content">
+               <li>Intermediate Level</li>
+               <li></li>
+             </ul>
+             <img class="skill-img back-skill-img" src="img/gsap-greensock.svg" alt="gsap logo">
+           </div>
+
+          </div>
+
+       </div>
+
+      </div>
+    </section>
+    <section class="section-project container grip grip--2--rows" id="projects">
+    <div class="title-projects">
+    <h2>Projects</h2>
+    </div>
+    <div class="projects-block container grid grip--2--rows grid--3--cols">
+    <div class="project">
+      <img src="/img/guess number.jpg" alt="" class="img-project">
+      <a href="/Guess Number Game/index.html" class="project-title">Guess the Number</a>
+    </div>
+    </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-form container hidden">
+        <button class="close-modal">&times;</button>
+        <form action="">
+        <div class="contact-title">
+        <h2>Contact Me</h2>
+        </div>
+        <div class="inputBox">
+          <input type="text" required="required" placeholder="Full Name">
+        </div>
+        <div class="inputBox">
+          <input type="email" required="required" placeholder="Email">
+        </div>
+        <div class="inputBox">
+          <textarea required="required" cols="30" rows="10" placeholder="Type your Message..."></textarea>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Send" class="sendbtn">
+        </div>
+      </div>
+    </form>
+    </section>
+    <div class="overlay hidden"></div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--4--cols">
+      <div class="logo-footer">
+        <a class="scroll" href="#"><img class="logo" src="" alt="Logo of Juan the front-end developer" />
+        </a>
+        </div>
+         <a href="#"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a>
+
+         <a href="#"><ion-icon class="social-icon" name="logo-github"></ion-icon></ion-icon></a>
+
+         <a href="#"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a>
+
+        </div>
+
+        <p class="copyright">Copyright &copy; 2028 by JuanGarcia, All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/EasePack.min.js"></script>
+
+    <script src="animations.js" defer></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
