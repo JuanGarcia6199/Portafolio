@@ -14,7 +14,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css">
 
     <title>Juan Portafolio</title>
   </head>
@@ -23,6 +24,7 @@
     <header class="header">
       <a class="scroll" href="#"><img class="logo" src="" alt="Logo of Juan the front-end developer" />
       </a>
+
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link scroll is-off-hover" href="#about">About</a></li>
@@ -32,6 +34,11 @@
           <li><a class="main-nav-link nav-cta scroll is-off-hover contactBtn" href="none">Contact</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -70,7 +77,7 @@
         autoplay
       >
       </lottie-player>
-      <div class="about-blocks">
+      <div class="about-block">
         <div class="title-about">
           <h2>About Me</h2>
         </div>
@@ -90,13 +97,13 @@
       </div>
     </section>
 
-    <section class="section-skills container grip grip--2--rows" id="skills">
+    <section class="section-skills container grid" id="skills">
 
       <div class="title-skills">
       <h2>Skills</h2>
       </div>
 
-      <div class="skills-block grid grid--4--cols grip--2--rows">
+      <div class="skills-block grid grid--4--cols">
 
         <div class="card-container is-off-hover">
 
@@ -231,11 +238,11 @@
 
       </div>
     </section>
-    <section class="section-project container grip grip--2--rows" id="projects">
+    <section class="section-project container grid" id="projects">
     <div class="title-projects">
     <h2>Projects</h2>
     </div>
-    <div class="projects-block container grid grip--2--rows grid--3--cols">
+    <div class="projects-block container grid grid--3--cols">
     <div class="project">
       <img src="img/guess-number.jpg" alt="Image of guess number proyect" class="img-project">
       <a href="https://tanjitatsu.github.io/Guess-Name/" class="project-title">Guess the Number</a>
@@ -290,7 +297,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/EasePack.min.js"></script>
 
-    <script src="animations.js" defer></script>
-    <script src="app.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/app.js" defer></script>
   </body>
 </html>

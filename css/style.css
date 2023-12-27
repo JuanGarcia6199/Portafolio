@@ -56,6 +56,7 @@ html {
   /* font-size: 10px; */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -64,6 +65,7 @@ body {
   font-weight: 400;
   color: #1e3a8a;
   background-color: #e9ebf3;
+  overflow-x: hidden;
 }
 
 /*************************************************/
@@ -94,13 +96,6 @@ body {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.grid--2--rows {
-  grid-template-rows: repeat(2, 1fr);
-}
-.grid--3--rows {
-  grid-template-rows: repeat(3, 1fr);
-}
-
 /*************************************************/
 /* HEADER */
 /*************************************************/
@@ -112,6 +107,7 @@ body {
   background-color: #bcc4dc;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -177,6 +173,27 @@ body {
 }
 
 /*************************************************/
+/* MOBILE NAV */
+/*************************************************/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #1e3a8a;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+
+/*************************************************/
 /* HERO SECTION */
 /*************************************************/
 
@@ -227,7 +244,6 @@ body {
 /*************************************************/
 
 .section-about {
-  align-items: center;
   margin: 0 auto;
   padding: 9.6rem 0 0;
 }
@@ -276,7 +292,7 @@ body {
 .title-skills {
   text-align: center;
   font-size: 3rem;
-  padding: 0 0 6.4rem;
+  padding: 0;
 }
 
 .skill-name {
@@ -302,7 +318,6 @@ body {
   transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
-  position: relative;
 }
 
 #card-content {

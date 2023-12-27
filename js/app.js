@@ -43,6 +43,15 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHero);
 
+///////// MOBILE NAVIGATION ///////
+
+const mobileNav = document.querySelector('.header');
+const navBtn = document.querySelector('.btn-mobile-nav');
+
+navBtn.addEventListener('click', function () {
+  mobileNav.classList.toggle('nav-open');
+});
+
 ///////// CONTACT MODAL///////
 
 const overlay = document.querySelector('.overlay');

@@ -1,3 +1,5 @@
+///Intro animation///
+
 const words =
   '<br /> <br />Juan Francisco Garcia, <br /> a Front-End Developer';
 
@@ -28,6 +30,8 @@ boxTl
     ease: 'power4.out',
   })
   .to('.text', { duration: 4, text: words });
+
+///Mobile navigation animation///
 
 ///card flip animation///
 
