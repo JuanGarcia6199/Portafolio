@@ -253,27 +253,25 @@
     <section id="contact">
       <div class="contact-form container hidden">
         <button class="close-modal">&times;</button>
-        <form action="https://api.web3forms.com/submit" method="POST">
-        <div class="contact-title">
-        <h2>Contact Me</h2>
-        </div>
-        
-        <input type="hidden" name="access_key" value="3236ee05-e52a-406a-98e2-c9310451eb8c">
+        <form action=>
+          <div class="contact-title">
+          <h2>Contact Me</h2>
+          </div>
 
-        <div class="inputBox">
-          <input type="text" required="required" placeholder="Full Name">
-        </div>
-        <div class="inputBox">
-          <input type="email" required="required" placeholder="Email">
-        </div>
-        <div class="inputBox">
-          <textarea required="required" cols="30" rows="10" placeholder="Type your Message..."></textarea>
-        </div>
-        <div class="inputBox">
+          <div class="inputBox">
+          <input type="text" required="required" placeholder="Full Name" id="name">
+         </div>
+         <div class="inputBox">
+          <input type="email" required="required" placeholder="Email" id="email">
+         </div>
+          <div class="inputBox">
+            <textarea required="required" cols="30" rows="10" placeholder="Type your Message..." id="message"></textarea>
+         </div>
+         <div class="inputBox">
           <input type="submit" value="Send" class="sendbtn">
-        </div>
+         </div>
+        </form>
       </div>
-    </form>
     </section>
     <div class="overlay hidden"></div>
 
@@ -300,6 +298,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/EasePack.min.js"></script>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/animations.js" defer></script>
     <script src="js/app.js" defer></script>
   </body>

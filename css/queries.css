@@ -173,6 +173,10 @@
   }
 }
 
+.title-popup {
+  font-size: 3rem;
+}
+
 @media (max-width: 32em) {
   .intro {
     font-size: 3.6rem;
@@ -188,6 +192,10 @@
 
   .title-projects {
     font-size: 2.4rem;
+  }
+
+  .title-popup {
+    font-size: 2.6rem;
   }
 
   .grid--4--cols {
